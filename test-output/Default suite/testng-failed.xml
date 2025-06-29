@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.neotech.lesson01.TitleAndLogoValidation">
+      <class name="com.neotech.lesson02.DependsDemo">
         <methods>
-          <include name="titleValidation"/>
-          <include name="quitBrowser"/>
-          <include name="openAndNavigate"/>
+          <include name="firstMethod"/>
+          <include name="thirdMethod"/>
+          <include name="fourthMethod"/>
+          <include name="secondMethod"/>
         </methods>
-      </class> <!-- com.neotech.lesson01.TitleAndLogoValidation -->
+      </class> <!-- com.neotech.lesson02.DependsDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
