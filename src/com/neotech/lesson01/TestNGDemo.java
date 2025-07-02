@@ -9,12 +9,12 @@ public class TestNGDemo {
 		System.out.println("This is test method 1");
 	}
 
-	@Test
+	@Test(groups = "smoke")
 	public void testTwo() {
 		System.out.println("This is test method 2");
 	}
 
-	@Test
+	@Test(groups = { "regression", "smoke" })
 	public void testThree() {
 		System.out.println("This is test method 3");
 	}

@@ -1,131 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="11" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-29T14:51:17 EDT" name="Suite" finished-at="2025-06-29T14:51:22 EDT" duration-ms="5759">
+  <suite started-at="2025-07-01T22:05:13 EDT" name="Default suite" finished-at="2025-07-01T22:05:30 EDT" duration-ms="16391">
     <groups>
     </groups>
-    <test started-at="2025-06-29T14:51:17 EDT" name="Test" finished-at="2025-06-29T14:51:22 EDT" duration-ms="5759">
-      <class name="com.neotech.lesson01.TestNGDemo">
-        <test-method signature="testOne()[pri:0, instance:com.neotech.lesson01.TestNGDemo@6adbc9d]" started-at="2025-06-29T14:51:17 EDT" name="testOne" finished-at="2025-06-29T14:51:17 EDT" duration-ms="2" status="PASS">
+    <test started-at="2025-07-01T22:05:13 EDT" name="Default test" finished-at="2025-07-01T22:05:30 EDT" duration-ms="16391">
+      <class name="com.neotech.lesson03.DataProviderDemo">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.neotech.lesson03.DataProviderDemo@229f66ed]" started-at="2025-07-01T22:05:13 EDT" name="setUp" finished-at="2025-07-01T22:05:17 EDT" duration-ms="3534" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testOne -->
-        <test-method signature="testThree()[pri:0, instance:com.neotech.lesson01.TestNGDemo@6adbc9d]" started-at="2025-06-29T14:51:17 EDT" name="testThree" finished-at="2025-06-29T14:51:17 EDT" duration-ms="1" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="loginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.neotech.lesson03.DataProviderDemo@229f66ed]" started-at="2025-07-01T22:05:17 EDT" name="loginFunctionality" data-provider="userData" finished-at="2025-07-01T22:05:20 EDT" duration-ms="3033" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testThree -->
-        <test-method signature="testTwo()[pri:0, instance:com.neotech.lesson01.TestNGDemo@6adbc9d]" started-at="2025-06-29T14:51:17 EDT" name="testTwo" finished-at="2025-06-29T14:51:17 EDT" duration-ms="1" status="PASS">
+        </test-method> <!-- loginFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neotech.lesson03.DataProviderDemo@229f66ed]" started-at="2025-07-01T22:05:20 EDT" name="tearDown" finished-at="2025-07-01T22:05:20 EDT" duration-ms="122" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testTwo -->
-      </class> <!-- com.neotech.lesson01.TestNGDemo -->
-      <class name="com.neotech.lesson01.TestNGMoreAnnotations">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.neotech.lesson01.TestNGMoreAnnotations@7b2bbc3]" started-at="2025-06-29T14:51:17 EDT" name="beforeTest" finished-at="2025-06-29T14:51:17 EDT" duration-ms="4" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.neotech.lesson03.DataProviderDemo@229f66ed]" started-at="2025-07-01T22:05:20 EDT" name="setUp" finished-at="2025-07-01T22:05:23 EDT" duration-ms="3287" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.neotech.lesson01.TestNGMoreAnnotations@7b2bbc3]" started-at="2025-06-29T14:51:22 EDT" name="beforeClass" finished-at="2025-06-29T14:51:22 EDT" duration-ms="1" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="loginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.neotech.lesson03.DataProviderDemo@229f66ed]" started-at="2025-07-01T22:05:23 EDT" name="loginFunctionality" data-provider="userData" finished-at="2025-07-01T22:05:23 EDT" duration-ms="198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[user123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.neotech.lesson01.TestNGMoreAnnotations@7b2bbc3]" started-at="2025-06-29T14:51:22 EDT" name="beforeMethod" finished-at="2025-06-29T14:51:22 EDT" duration-ms="1" status="PASS">
+        </test-method> <!-- loginFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neotech.lesson03.DataProviderDemo@229f66ed]" started-at="2025-07-01T22:05:23 EDT" name="tearDown" finished-at="2025-07-01T22:05:24 EDT" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="testOne()[pri:0, instance:com.neotech.lesson01.TestNGMoreAnnotations@7b2bbc3]" started-at="2025-06-29T14:51:22 EDT" name="testOne" finished-at="2025-06-29T14:51:22 EDT" duration-ms="0" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.neotech.lesson03.DataProviderDemo@229f66ed]" started-at="2025-07-01T22:05:24 EDT" name="setUp" finished-at="2025-07-01T22:05:27 EDT" duration-ms="3264" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testOne -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.neotech.lesson01.TestNGMoreAnnotations@7b2bbc3]" started-at="2025-06-29T14:51:22 EDT" name="afterMethod" finished-at="2025-06-29T14:51:22 EDT" duration-ms="0" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="loginFunctionality(java.lang.String,java.lang.String)[pri:0, instance:com.neotech.lesson03.DataProviderDemo@229f66ed]" started-at="2025-07-01T22:05:27 EDT" name="loginFunctionality" data-provider="userData" finished-at="2025-07-01T22:05:30 EDT" duration-ms="2702" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[user456]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="testTwo()[pri:0, instance:com.neotech.lesson01.TestNGMoreAnnotations@7b2bbc3]" started-at="2025-06-29T14:51:22 EDT" name="testTwo" finished-at="2025-06-29T14:51:22 EDT" duration-ms="1" status="PASS">
+        </test-method> <!-- loginFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neotech.lesson03.DataProviderDemo@229f66ed]" started-at="2025-07-01T22:05:30 EDT" name="tearDown" finished-at="2025-07-01T22:05:30 EDT" duration-ms="106" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testTwo -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.neotech.lesson01.TestNGMoreAnnotations@7b2bbc3]" started-at="2025-06-29T14:51:22 EDT" name="beforeMethod" finished-at="2025-06-29T14:51:22 EDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.neotech.lesson01.TestNGMoreAnnotations@7b2bbc3]" started-at="2025-06-29T14:51:22 EDT" name="afterMethod" finished-at="2025-06-29T14:51:22 EDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.neotech.lesson01.TestNGMoreAnnotations@7b2bbc3]" started-at="2025-06-29T14:51:22 EDT" name="afterClass" finished-at="2025-06-29T14:51:22 EDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.neotech.lesson01.TestNGMoreAnnotations@7b2bbc3]" started-at="2025-06-29T14:51:22 EDT" name="afterTest" finished-at="2025-06-29T14:51:22 EDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.neotech.lesson01.TestNGMoreAnnotations -->
-      <class name="com.neotech.lesson01.TitleAndLogoValidation">
-        <test-method is-config="true" signature="openAndNavigate()[pri:0, instance:com.neotech.lesson01.TitleAndLogoValidation@77fbd92c]" started-at="2025-06-29T14:51:17 EDT" name="openAndNavigate" finished-at="2025-06-29T14:51:18 EDT" duration-ms="1653" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openAndNavigate -->
-        <test-method signature="loginValidation()[pri:0, instance:com.neotech.lesson01.TitleAndLogoValidation@77fbd92c]" started-at="2025-06-29T14:51:18 EDT" name="loginValidation" finished-at="2025-06-29T14:51:20 EDT" duration-ms="2111" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginValidation -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.neotech.lesson01.TitleAndLogoValidation@77fbd92c]" started-at="2025-06-29T14:51:20 EDT" name="quitBrowser" finished-at="2025-06-29T14:51:20 EDT" duration-ms="88" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="openAndNavigate()[pri:0, instance:com.neotech.lesson01.TitleAndLogoValidation@77fbd92c]" started-at="2025-06-29T14:51:20 EDT" name="openAndNavigate" finished-at="2025-06-29T14:51:22 EDT" duration-ms="1677" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openAndNavigate -->
-        <test-method signature="logoValidation()[pri:0, instance:com.neotech.lesson01.TitleAndLogoValidation@77fbd92c]" started-at="2025-06-29T14:51:22 EDT" name="logoValidation" finished-at="2025-06-29T14:51:22 EDT" duration-ms="105" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoValidation -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.neotech.lesson01.TitleAndLogoValidation@77fbd92c]" started-at="2025-06-29T14:51:22 EDT" name="quitBrowser" finished-at="2025-06-29T14:51:22 EDT" duration-ms="87" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- com.neotech.lesson01.TitleAndLogoValidation -->
-      <class name="com.neotech.lesson01.TestNGAnnotations">
-        <test-method signature="test1()[pri:0, instance:com.neotech.lesson01.TestNGAnnotations@a1153bc]" started-at="2025-06-29T14:51:22 EDT" name="test1" finished-at="2025-06-29T14:51:22 EDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.neotech.lesson01.TestNGAnnotations@a1153bc]" started-at="2025-06-29T14:51:22 EDT" name="beforeMethod" finished-at="2025-06-29T14:51:22 EDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="test2()[pri:0, instance:com.neotech.lesson01.TestNGAnnotations@a1153bc]" started-at="2025-06-29T14:51:22 EDT" name="test2" finished-at="2025-06-29T14:51:22 EDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.neotech.lesson01.TestNGAnnotations@a1153bc]" started-at="2025-06-29T14:51:22 EDT" name="beforeMethod" finished-at="2025-06-29T14:51:22 EDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.neotech.lesson01.TestNGAnnotations@a1153bc]" started-at="2025-06-29T14:51:22 EDT" name="afterMethod" finished-at="2025-06-29T14:51:22 EDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.neotech.lesson01.TestNGAnnotations@a1153bc]" started-at="2025-06-29T14:51:22 EDT" name="afterMethod" finished-at="2025-06-29T14:51:22 EDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="test3()[pri:0, instance:com.neotech.lesson01.TestNGAnnotations@a1153bc]" started-at="2025-06-29T14:51:22 EDT" name="test3" finished-at="2025-06-29T14:51:22 EDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.neotech.lesson01.TestNGAnnotations@a1153bc]" started-at="2025-06-29T14:51:22 EDT" name="beforeMethod" finished-at="2025-06-29T14:51:22 EDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.neotech.lesson01.TestNGAnnotations@a1153bc]" started-at="2025-06-29T14:51:22 EDT" name="afterMethod" finished-at="2025-06-29T14:51:22 EDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.neotech.lesson01.TestNGAnnotations -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.neotech.lesson03.DataProviderDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

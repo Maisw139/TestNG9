@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="IncludeExcludeExampleSuite" verbose="1">
+  <test thread-count="5" name="IncludeExcludeExample">
+    <!-- Include everything in lesson01 package
+    except TitleAndLogoValidation class -->
+    
+    <!-- First way: Include the classes you need 
+    <classes>
+	    <class name="com.neotech.lesson01.TestNGAnnotations" />
+	    <class name="com.neotech.lesson01.TestNGDemo" />
+	    <class name="com.neotech.lesson01.TestNGMoreAnnotations" />
+    </classes>
+    -->
+    
+    <!-- Second way: Include the lesson01 package but
+    exclude the methods of TitleAndLogoValidation class -->
+    
+    <packages>
+      <package name="com.neotech.lesson01"></package>
+    </packages>
+    
+    <classes>
+    	<class name="com.neotech.lesson01.TitleAndLogoValidation">
+    		<methods>
+    		<!-- .* means all methods -->
+    			<exclude name=".*" />
+    		</methods>
+    	</class>
+    	
+    	<!-- Exclude testOne and testTwo in TestNGDemo -->
+    	<class name="com.neotech.lesson01.TestNGDemo">
+    		<methods>
+    			<exclude name="testOne" />
+    			<exclude name="testTwo" />
+    		</methods>
+    	</class>
+    </classes>
+    
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

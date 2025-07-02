@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [groups demo]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="groups demo test(failed)">
-    <groups>
-      <run>
-        <include name="smoke"/>
-        <exclude name="broken"/>
-      </run>
-    </groups>
+<suite name="Failed suite [IncludeExcludeExampleSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="IncludeExcludeExample(failed)">
     <classes>
       <class name="com.neotech.lesson01.TitleAndLogoValidation">
         <methods>
           <include name="loginValidation"/>
+          <include name="quitBrowser"/>
+          <include name="openAndNavigate"/>
         </methods>
       </class> <!-- com.neotech.lesson01.TitleAndLogoValidation -->
     </classes>
-  </test> <!-- groups demo test(failed) -->
-</suite> <!-- Failed suite [groups demo] -->
+  </test> <!-- IncludeExcludeExample(failed) -->
+</suite> <!-- Failed suite [IncludeExcludeExampleSuite] -->
