@@ -1,5 +1,7 @@
 package com.neotech.utils;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 import java.util.Set;
@@ -7,10 +9,14 @@ import java.util.Set;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.google.common.io.Files;
 
 public class CommonMethods extends BaseClass {
 
@@ -47,7 +53,7 @@ public class CommonMethods extends BaseClass {
 	 */
 	public static void clickRadioOrCheckbox(List<WebElement> elementList, String selectValue) {
 		for (WebElement el : elementList) {
-			String elementValue = el.getAttribute("value").trim();
+			String elementValue = el.getDomProperty("value").trim();
 
 			if (elementValue.equals(selectValue) && el.isEnabled()) {
 				el.click();
@@ -316,4 +322,22 @@ public class CommonMethods extends BaseClass {
 		}
 	}
 
+	/**
+	 * This method will take a screenshot saves it in the screenshots folder with the given fileName. 
+	 * 
+	 * @param fileName
+	 */
+	public static void takeScreenshot(String fileName)
+	{
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		
+		try {
+			Files.copy(source, new File("screenshots/" + fileName +".png"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
 }
